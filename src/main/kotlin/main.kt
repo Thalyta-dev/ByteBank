@@ -5,18 +5,14 @@ fun main() {
     var saldo = 0.0
 
 
-    if (saldo>0.0){
+    when {
 
-        println("Conta positiva")
+        saldo > 0.0 -> println("Conta positiva")
+        saldo < 0.0 -> println("Conta negativa")
 
-    }else if (saldo<0.0){
-
-        println("Conta negativa")
-
-    }else{
-
-        println("Conta neutra")
-
+        else -> {
+            println("Conta neutra")
+        }
     }
 
     println("tilular $titular")
