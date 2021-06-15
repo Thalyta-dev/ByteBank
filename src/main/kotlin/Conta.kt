@@ -1,4 +1,10 @@
-class Conta(var titular: String, var numero: Int) {
+class Conta(
+
+    var titular: String,
+    var numero: Int,
+    var teste: Int = 0
+
+    ){
 
     var saldo = 0.0
         private set

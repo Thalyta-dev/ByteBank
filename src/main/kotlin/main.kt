@@ -3,7 +3,8 @@ fun main() {
     var conta = Conta("Alex", 10)
     conta.depositar(200.0)
 
-    var conta2 = Conta("jose", 20)
+    //labels = especificar qual properties estou mandando
+    var conta2 = Conta(titular = "jose", numero = 20)
     conta2.depositar(200.0)
 
 
