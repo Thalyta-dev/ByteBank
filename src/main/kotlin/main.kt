@@ -1,15 +1,10 @@
 fun main() {
 
-    var conta = Conta()
-    conta.titular = "Alex"
-    conta.numero = 10
-    conta.saldo = 20.0
+    var conta = Conta("Alex", 10)
+    conta.depositar(200.0)
 
-
-    var conta2 = Conta()
-    conta2.titular = "jose"
-    conta2.numero = 10
-    conta2.saldo = 20.0
+    var conta2 = Conta("jose", 20)
+    conta2.depositar(200.0)
 
 
     conta.sacar(20.0)

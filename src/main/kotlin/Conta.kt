@@ -1,11 +1,7 @@
-class Conta {
-
-    var titular = ""
-
-    var numero = 0
+class Conta(var titular: String, var numero: Int) {
 
     var saldo = 0.0
-
+        private set
 
 
     fun depositar(valorDeposito: Double){
@@ -41,7 +37,7 @@ class Conta {
 
             this.saldo -= valorTranferencia
 
-            contaTransferencia.saldo = contaTransferencia.saldo + valorTranferencia
+            contaTransferencia.depositar(valorTranferencia);
 
             println(
                 "Tranferencia no valor de $valorTranferencia foi realizada" +
