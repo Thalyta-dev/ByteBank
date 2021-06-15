@@ -12,6 +12,20 @@ fun main() {
         testaCondicoes(saldo)
 
     }
+    var i = 0
+
+    while (i < 5){
+
+        var titular = "Thalyta $i"
+
+        val numeroConta = 1000 + i
+
+        var saldo = 10.0 + i
+
+        println("tilular $titular")
+        testaCondicoes(saldo)
+        i++
+    }
 
 }
 
