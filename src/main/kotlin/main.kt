@@ -1,9 +1,21 @@
 fun main() {
 
-    var titular = "Thalyta "
-    val numeroConta = 1000
-    var saldo = 0.0
+    for (i in 5 downTo 1 step 2) {
 
+        var titular = "Thalyta $i"
+
+        val numeroConta = 1000 + i
+
+        var saldo = 10.0 + i
+
+        println("tilular $titular")
+        testaCondicoes(saldo)
+
+    }
+
+}
+
+fun testaCondicoes(saldo: Double) {
 
     when {
 
@@ -14,7 +26,5 @@ fun main() {
             println("Conta neutra")
         }
     }
-
-    println("tilular $titular")
 
 }
