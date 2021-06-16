@@ -1,10 +1,8 @@
-class Diretor(
+class Analista(
 
     nome: String,
     cpf: String,
     salario: Double,
-    val senha: Int,
-    var plr:Double
 
 ) : Funcionario(
 
@@ -14,7 +12,7 @@ class Diretor(
 
 ) {
 
-    override val bonificacao: Double get() = super.bonificacao + salario + plr
+    override val bonificacao: Double get() = super.bonificacao + salario * 0.1
 
     fun autenticacao(senha: Int) {
 

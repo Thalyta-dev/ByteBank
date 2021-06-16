@@ -1,8 +1,9 @@
-class Conta(
+import java.sql.DriverManager.println
+
+open class Conta(
 
     var titular: String,
     var numero: Int,
-    var teste: Int = 0
 
     ){
 
@@ -19,7 +20,7 @@ class Conta(
 
     }
 
-    fun sacar(valorSaque: Double) {
+    open fun sacar(valorSaque: Double) {
 
 
         if (saldo >= valorSaque) {

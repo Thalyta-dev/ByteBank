@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/bityBank.iml" filepath="$PROJECT_DIR$/bityBank.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ByteBank.iml" filepath="$PROJECT_DIR$/ByteBank.iml" />
     </modules>
   </component>
 </project>
