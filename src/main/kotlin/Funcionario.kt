@@ -1,4 +1,4 @@
-open class Funcionario(
+abstract class Funcionario(
 
     val nome: String,
     val cpf: String,
@@ -6,7 +6,7 @@ open class Funcionario(
 
 
 ) {
-    open val bonificacao: Double get() =  salario * 0.1
+    abstract val bonificacao: Double
 
 
 }

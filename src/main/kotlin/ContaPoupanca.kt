@@ -9,7 +9,15 @@ class ContaPoupanca(
     ) {
 
     override fun sacar(valorSaque: Double) {
-        val valorTaxado = valorSaque + 0.1
-        super.sacar(valorTaxado)
+
+        var valorTaxado = valorSaque +  valorSaque * 0.1
+        if (saldo >= valorTaxado) {
+
+            this.saldo -= valorTaxado;
+
+            println("Foi sacado $valorSaque na sua conta, saldo atual ${this.saldo}")
+            return
+
+        }
     }
 }

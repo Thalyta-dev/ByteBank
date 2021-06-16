@@ -1,6 +1,5 @@
-import java.sql.DriverManager.println
 
-open class Conta(
+abstract class Conta(
 
     var titular: String,
     var numero: Int,
@@ -8,7 +7,7 @@ open class Conta(
     ){
 
     var saldo = 0.0
-        private set
+        protected set
 
 
     fun depositar(valorDeposito: Double){
@@ -20,23 +19,8 @@ open class Conta(
 
     }
 
-    open fun sacar(valorSaque: Double) {
+    abstract fun sacar(valorSaque: Double)
 
-
-        if (saldo >= valorSaque) {
-
-            this.saldo -= valorSaque;
-
-            println("Foi sacado $valorSaque na sua conta, saldo atual ${this.saldo}")
-            return
-
-        }
-
-        println("Sua conta não tem saldo suficiente, saldo atual ${this.saldo}")
-
-
-
-    }
 
     fun tranferir(contaTransferencia: Conta, valorTranferencia: Double) {
 

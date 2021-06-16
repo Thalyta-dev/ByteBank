@@ -1,7 +1,7 @@
 fun main() {
 
     println("Olaá")
-    testaFuncionarios()
+    testaContasDiferentes()
     println("Olaá")
 
 
