@@ -11,7 +11,7 @@ class Cliente(
     val endereco: Endereco = Endereco()
 ): Autenticavel {
 
-   override fun autenticacao(senha: Int): Boolean {
+   override fun autentica(senha: Int): Boolean {
 
         if(this.senha == senha){
             return true

@@ -24,7 +24,7 @@ class Gerente : Autenticavel, FuncionarioAdmin {
 
 
     override fun autenticacao(senha: Int): Boolean {
-        return super<FuncionarioAdmin>.autenticacao(senha)
+        return super<FuncionarioAdmin>.autentica(senha)
     }
 
 

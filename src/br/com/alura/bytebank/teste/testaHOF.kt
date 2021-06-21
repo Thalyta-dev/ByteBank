@@ -1,5 +1,8 @@
 package br.com.alura.bytebank.teste
 
+import modelo.Autenticavel
+import modelo.SistemaInterno
+
 fun testaHOF() {
     soma(1, 5, resultado = {valor ->
         println(valor)
